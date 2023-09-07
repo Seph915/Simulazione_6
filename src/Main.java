@@ -11,8 +11,10 @@ public class Main {
         for (Professor professor : professors) {
             long id = professor.getDepartmentId();
             System.out.println(professor.getDepartmentId());
-            if ("java".equals(professor.getCourse())) {
-                System.out.println("java " + professor.getDepartmentId());
+            long identifier = professor.getIdentifier();
+            System.out.println("identifier" + " " + professor.getIdentifier());
+            if (professor.getCourse().equals("java")) {
+                System.out.println(" course professor java " + professor.getDepartmentId());
             }
         }
     }

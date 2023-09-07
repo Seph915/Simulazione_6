@@ -34,4 +34,7 @@ public class Professor {
     public String getCourse() {
         return course;
     }
+    public long getIdentifier() {
+        return identifier;
+    }
 }
